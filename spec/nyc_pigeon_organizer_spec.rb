@@ -1,5 +1,5 @@
 require 'spec_helper'
-
+require 'pry'
 describe "NYC Pigeon Organizer" do
 
   describe "#nyc_pigeon_organizer" do
@@ -28,6 +28,7 @@ describe "NYC Pigeon Organizer" do
 
     context "Overview: Data Type and Attributes of Return Value" do
       it "returns a hash" do
+      # binding.pry
         puts @result
         expect(@result.class).to eq(Hash)
       end
